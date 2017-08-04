@@ -1,0 +1,42 @@
+<ion-view view-title="Messenger">
+
+  <ion-content class="text-center p20">
+
+  <img src="img/icon.png">
+    <div class="list">
+    <!-- all changes from our Firebase database magically appear here! -->
+    </div>
+    <div class="card bg-energized">
+    <h4 class="text-white">Your RingRing Messenger I.D</h4>
+    	<h5 class="text-white">{{ firebaseObject.text }}</h5>
+    </div>
+
+    <div class="he50"></div>
+
+    <h3 class="dark fw300 m0">Connect your friends</h3>
+	<p class="dark fw300 mb20 mt30 text-left up">messages list</p>
+    <ul>
+      <li ng-repeat="message in messages" class="text-right">
+      <!-- delete a message -->
+        <!-- edit a message -->
+        <a ng-click="messages.$remove(message)" class="absolute z-shi pt10"><i class="ti-trash energized"></i></a>
+        <div class="list">
+    		<label class="item item-input">
+        		<input type="text" ng-model="message.text" ng-change="messages.$save(message)" class="bg-dark text-light p10" />
+        	</label>
+        </div>
+      </li>
+    </ul>
+    <!-- push a new message onto the array -->
+    <p class="dark fw300 mb20 mt30 text-left up">write a new message</p>
+    <div class="list pt20">
+    	<label class="item item-input">
+      		<input type="text" placeholder="Write a new message" ng-model="newMessageText" class="bg-light p10 text-center">
+      	</label>
+      </div>
+      <a ng-click="addMessage(newMessageText)" class="button button-block button-energized up">Add Message</a>
+
+      <div class="he50"></div>
+
+  </ion-content>
+</ion-view>

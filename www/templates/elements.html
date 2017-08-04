@@ -1,0 +1,32 @@
+<ion-view view-title="Users">
+  <ion-content class="bg-light text-center p20">
+
+	<img src="img/ionic.png" width="50">
+
+  <h3 class="dark fw300 m0">Welcome Ringers</h3>
+	<p class="dark fw900 mb20 up">Check who's available online?</p>
+
+  <div class="card">
+    <div class="item item-divider bg-light">
+  <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, lazyLoad : true, rewindNav : false, items : 10, itemsMobile : [479,3], singleItem : true, autoHeight : true, navigationText: ['<i class=\'ti-control-backward\'></i>', '<i class=\'ti-control-forward\'></i>']}">
+        <div owl-carousel-item="" ng-repeat="item in notifications" class="carousel-item text-center">
+          <img ng-src="img/users/{{item.img}}" class="round" width="50">
+          <p class="dark text-center fw700">{{item.user}}</p>
+          <p class="dark text-center pl90 pr90">{{item.text}}</p>
+          <div class="text-center m20">
+            <i class="ti-email font-xl m10 stable"></i>
+            <i class="ti-mobile font-xl m10 stable"></i>
+            <i class="ti-twitter font-xl m10 stable"></i>
+            <i class="ti-sharethis font-xl m10 stable"></i>
+          </div>
+        </div>
+      </data-owl-carousel>
+    </label>
+  </div>
+</div>
+      </div>
+
+      <div class="he50"></div>
+
+  </ion-content>
+</ion-view>

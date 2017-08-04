@@ -1,0 +1,80 @@
+<ion-view view-title="Home" hide-nav-bar="true">
+
+<div class="bar bar-header bar-transparent animate" ng-class="{'menuSmall shadow-small': topMenu === true}">
+	  <button class="button button-clear animate" menu-toggle="left">
+		<i ng-hide="isActive" class="ti-align-justify font-xl p10"></i>
+        <i ng-show="isActive" class="ti-close font-xl p10"></i>
+      </button>
+      <img src="" class="title animate">
+	</div>
+
+  <ion-content>
+
+    <!-- ionic slider -->
+	<ion-slide-box>
+	  <ion-slide>
+	    <div class="">
+		    <div class="overlay-center p40 pt60">
+		    	<a class="button button-energized up" menu-toggle="left">Touch Here To Start!</a>
+		    </div>
+	    	<img src="img/slider/1.png" class="img-responsive">
+	    </div>
+	  </ion-slide>
+	  <ion-slide>
+	     <div class="">
+	    	<img src="img/slider/2.png" class="img-responsive">
+	    </div>
+	  </ion-slide>
+	  <ion-slide>
+	     <div class="">
+		    <div class="overlay-center p40 pt60">
+		    	<h4 class="dark fw300 m0">Friendly, elegant and performant</h4>
+		    	<p class="dark fw900 up">a complete mobile solution</p>
+		    	<a class="button button-energized up" menu-toggle="left">TOUCH HERE TO START!</a>
+		    </div>
+	    	<img src="img/slider/3.png" class="img-responsive">
+	    </div>
+	  </ion-slide>
+	</ion-slide-box>
+
+	<div class="he5 bg-light"></div>
+
+	<!-- Banner content -->
+	<div class="row p0 bg-energized">
+	  <div class="col p0">
+	  	<img src="img/banners/1.png" class="img-responsive">
+	  </div>
+	  <div class="col p10">
+	  	<h4 class="fw500 text-white">Scan your QR in simplicity!</h4>
+		<p class="text-white">The usage of the App is TestFlight Purposes for IntelLigenEthics aka EcMA</p>
+	  </div>
+	</div>
+
+	<div class="he5 bg-light">
+		<!-- Team carousel -->
+
+		<h4 class="fw300 m0 p30 text-center">Hi QR Ringers</h4>
+
+	<data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, lazyLoad : true, rewindNav : false, items : 10, itemsMobile : [479,3], singleItem : true, autoHeight : true, navigationText: ['<i class=\'ti-control-backward\'></i>', '<i class=\'ti-control-forward\'></i>']}">
+	      <div owl-carousel-item="" ng-repeat="item in notifications" class="carousel-item text-center">
+	      	<img ng-src="img/users/{{item.img}}" class="round" width="50">
+	      	<p class="dark text-center fw700">{{item.user}}</p>
+	        <p class="dark text-center pl90 pr90">{{item.text}}</p>
+	        <div class="text-center m20">
+	        	<i class="ti-email font-xl m10 stable"></i>
+	        	<i class="ti-mobile font-xl m10 stable"></i>
+	        	<i class="ti-twitter font-xl m10 stable"></i>
+	        	<i class="ti-sharethis font-xl m10 stable"></i>
+	        </div>
+	      </div>
+	    </data-owl-carousel>
+	</div>
+
+
+
+	</div> <!-- // tabs -->
+
+
+
+  </ion-content>
+</ion-view>

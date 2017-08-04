@@ -1,0 +1,14 @@
+{
+  "name": "ringring2",
+  "app_id": "3b9f0349",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "scss/**/*"
+  ],
+  "type": "ionic1"
+}

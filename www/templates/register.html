@@ -1,0 +1,32 @@
+<ion-view view-title="Home" hide-nav-bar="true">
+
+  <ion-content>
+
+    <div class="img-cover fixed z-lo">
+     	<img src="img/animated-bg.gif">
+	</div>
+
+	<div class="relative z-hi text-center p20 pt70 ml40 mr40 pb70">
+		<h1 class="fw300 m0 light">Join</h1>
+		<h4 class="fw300 m0 light">RingRing<p> <img src="img/icon.png" height="70"></h4>
+		<div class="list list-inset mt120">
+          <label class="item item-input input-transparent">
+              <input type="email" placeholder="Email" ng-model="email">
+          </label>
+          <label class="item item-input input-transparent mt10">
+              <input type="text" placeholder="Username" ng-model="username">
+          </label>
+          <label class="item item-input input-transparent mt10">
+              <input type="password" placeholder="Password" ng-model="password">
+          </label>
+      </div>
+      <div class="p10">
+        <button class="button button-block button-energized up" ng-click="register(email, username, password)">Register</button>
+        <p class="light mt30">Been there before?</p>
+        <a class="button button-outline button-light button-block up" href="#/app/login">Login</a>
+        </div>
+	</div>
+
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>QR Ring</title>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCRwIRxvsnbwQXGcKJhidGjOsp_5MdaCj4",
+        authDomain: "ringmy-e683b.firebaseapp.com",
+        databaseURL: "https://ringmy-e683b.firebaseio.com",
+        projectId: "ringmy-e683b",
+        storageBucket: "",
+        messagingSenderId: "958902034273"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="lib/owl-carousel/owl.carousel.css">
+
+    <!-- owl carousel default theme -->
+    <link rel="stylesheet" href="lib/owl-carousel/owl.theme.css">
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- helper css functions -->
+    <link href="css/helpers.css" rel="stylesheet">
+    
+    <!-- ionic/angularmin js -->
+    <script src="angular.min.js"></script>
+
+    <!-- themify icons -->
+    <link href="lib/themify-icons/themify-icons.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+
+
+    <!--  jQuery  -->
+    <script src="lib/jquery-3.0.0.min.js"></script>
+
+    <!-- owl carousel js plugin -->
+    <script src="lib/owl-carousel/owl.carousel.js"></script>
+
+
+    <!-- firebase -->
+    <script src="lib/firebase/firebase.js"></script>
+    <!-- angularfire -->
+    <script src="lib/angularfire/dist/angularfire.min.js"></script>
+
+    <!-- angularresource -->
+    <script src="lib/angular-resource.min.js"></script>
+
+    <!-- ngcordova -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+
+
+
+    <!-- your app's js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+
+  </head>
+
+  <body ng-app="revolution">
+    <ion-nav-view></ion-nav-view>
+    <script src="js/firebase-init.js"></script>
+  </body>
+</html>
